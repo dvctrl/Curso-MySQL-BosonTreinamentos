@@ -1,12 +1,12 @@
 USE db_Biblioteca; 
 
-CREATE TABLE IF NOT EXISTS nome_tabela (
+CREATE TABLE IF NOT EXISTS tbl_Livro (
     idLivro smallint NOT NULL PRIMARY KEY,
-    Nome_Livro Varchar(30) NOT NULL,
+    Nome_Livro Varchar(60) NOT NULL,
     ISBN Varchar(50) NOT NULL,
     idAutor SmallInt NOT NULL, 
     Data_Pub Date NOT NULL,
-    Preco_Livro Decimal NOT NULL
+    Preco_Livro Decimal(3,2) NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS tbl_Autores (
