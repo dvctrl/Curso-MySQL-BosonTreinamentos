@@ -1,7 +1,7 @@
 USE db_Biblioteca; 
 
 CREATE TABLE IF NOT EXISTS tbl_Livro (
-    idLivro smallint NOT NULL PRIMARY KEY,
+    idLivro smallint NOT NULL PRIMARY KEY AUTO_INCREMENT,
     Nome_Livro Varchar(60) NOT NULL,
     ISBN Varchar(50) NOT NULL,
     idAutor SmallInt NOT NULL, 
